@@ -8,6 +8,8 @@ copyright:           "(c) 2025 Yoshikuni Jujo"
 
 extra-source-files:
 - README.md
+
+extra-doc-files:
 - CHANGELOG.md
 
 # Metadata used when publishing your package
