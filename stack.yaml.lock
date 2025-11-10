@@ -3,11 +3,17 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/topics/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: freer-base-classes-0.1.0.0@sha256:38e4853293416518606ea78699a57025b3595a8fbec36e8a26cce49e18fa1daf,1895
+    pantry-tree:
+      sha256: ea291a883003d80cdc2bcc4e3589e495ae1559e96e8368fe94ea724078f01476
+      size: 463
+  original:
+    hackage: freer-base-classes-0.1.0.0
 snapshots:
 - completed:
-    sha256: 5524530ac8c0fd4c9d7488442ff14edb0fcbf4989b928b86398f94f367e01ee3
-    size: 726110
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/24/19.yaml
-  original:
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/24/19.yaml
+    sha256: 4edb7d0ff97950aa354beeb68746cc0c6812c2d478a51a90310822f64744a484
+    size: 705173
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly/2025/11/9.yaml
+  original: nightly-2025-11-09
