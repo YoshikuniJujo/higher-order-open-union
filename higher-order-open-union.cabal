@@ -5,7 +5,7 @@ cabal-version: 2.2
 -- see: https://github.com/sol/hpack
 
 name:           higher-order-open-union
-version:        0.1.0.0
+version:        0.1.0.1
 synopsis:       This package is used by package yaftee
 description:    Please see the README on GitHub at <https://github.com/YoshikuniJujo/higher-order-open-union#readme>
 category:       Control
@@ -31,7 +31,6 @@ library
       Control.HigherOpenUnion
       Data.HigherFunctor
       Data.TypeElem
-      Lib
   other-modules:
       Paths_higher_order_open_union
   autogen-modules:
@@ -42,21 +41,6 @@ library
   build-depends:
       base >=4.7 && <5
     , freer-base-classes ==0.1.*
-  default-language: Haskell2010
-
-executable higher-order-open-union-exe
-  main-is: Main.hs
-  other-modules:
-      Paths_higher_order_open_union
-  autogen-modules:
-      Paths_higher_order_open_union
-  hs-source-dirs:
-      app
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , freer-base-classes ==0.1.*
-    , higher-order-open-union
   default-language: Haskell2010
 
 test-suite higher-order-open-union-test

@@ -68,3 +68,9 @@ instance (Tight h, Tight (U hs)) => Tight (U (h ': hs)) where
 	mapT f g u = case decomp u of
 		Left u' -> weaken $ mapT f g u'
 		Right h -> injh $ mapT f g h
+
+instance Tight Fail where
+	mapT _ _ (Fail e) = Fail e
+	mapT f _ (m `FailCatch` h) = (f m) `FailCatch` \e -> f $ h e
+
+instance Loose Fail
